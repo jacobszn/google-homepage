@@ -1,0 +1,139 @@
+:root {
+    --footer-background: #f2f0f0;
+    --footer-font: #70757a;
+    --footer-font-hover: #3c4043;
+    --footer-font-active: #ea4335;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100%;
+}
+ul {
+    list-style: none;
+}
+#nav_bar {
+    float: right;
+}
+#nav_bar li {
+    display: inline-block;
+    padding: 8px;
+    line-height: 24px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+}
+#nav_bar #sign_in {
+    background: #4887ef; 
+    margin-right: 25px;
+    padding: 7px 15px;
+    border-radius: 3px; 
+    font-weight: bold;
+}
+.nav-links {
+    color: #404040;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li.nav-links a:hover {
+    text-decoration: underline;
+}
+
+#sign_in:hover { 
+    box-shadow: 1px 1px 5px #999;
+}
+
+#sign_in {
+    color: #fff;
+}       
+#main {
+    text-align: center;
+}
+#logo {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+    padding-top: 112px;
+    padding-bottom: 20px;         
+}
+#query {
+    height: 30px;
+    width: 40%;
+    margin-bottom: 25px;
+    font-size: 15px;
+    padding: 5px 15px;
+    border: 1px solid #e2e2e2;
+    box-shadow: 0px 3px 2px #e2e2e2;
+    border-radius: 25px;
+}
+#submit {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;            
+}
+#submit:hover {
+    box-shadow: 0.5px 0.5px 5px #999;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid var(--border-color);
+    background: var(--footer-background);
+    color: var(--footer-font);
+    font-size: 1.2rem;
+}
+
+.left-section, .right-section {
+    display: flex;
+}
+
+.right-section {
+    margin-right: 3rem;
+}
+
+.footer-link {
+    display: block;
+    padding: 1rem 0 1rem 3rem;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    color: var(--footer-font-hover);
+}
+
+.footer-link:active {
+    color: var(--footer-font-active);
+}
+@media (max-width: 660px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .searchbar {
+        width: 80%;
+    }
+
+    html {
+        font-size: 50%; 
+    }
+}
